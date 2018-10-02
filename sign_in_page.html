@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in Amazon</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="sign_in_wrapper"> 
+		<div class="wrapper_title"> Sign in </div>
+
+		<form id="sign_in_form" name="sign_in_form">
+			<label for="email"> Email </label>
+			<input type="text" minlength="4" name="email" id="email">
+
+			<label for="password"> Password </label>
+			<input type="password" name="password" minlength="6" maxlength="32" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+
+			<input id="submit" type="submit" name="submit" value="Sign in" onclick="ValidateEmail(document.sign_in_form.email)">
+
+		</form>
+
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
